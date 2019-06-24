@@ -42,3 +42,15 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+.editorconfig
+.firebase/
+.firebaserc
+angular.json
+e2e/
+firebase.json
+package-lock.json
+package.json
+src/environments/
+tsconfig.json
+tslint.json
