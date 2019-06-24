@@ -1,0 +1,28 @@
+#header {
+	position: fixed;
+	z-index: 999;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	@media (max-width: 768px) {
+		position: relative;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	h1 {
+		font-family: ivymode, serif;
+		font-style: normal;
+		font-weight: 200;
+		text-align: left;
+		font-size: 24pt;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+		a {
+			color: black;
+		}
+		a:hover {
+			color: lightgrey;
+			text-decoration: none;
+		}
+	}
+}

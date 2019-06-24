@@ -1,0 +1,17 @@
+#footer {
+	// position: absolute;
+	height: 5vh;
+	// bottom: 0;
+	#footer-div {
+		@media (max-width: 768px) {
+			margin-top: 5em;
+			text-align: center;
+		}
+		// margin-top: 5em;
+		#footer-text {
+			font-family: ivymode, serif;
+			font-size: 8pt;
+			color: grey;
+		}
+	}
+}

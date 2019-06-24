@@ -1,0 +1,17 @@
+#myCarousel {
+	margin-top: 7em;
+	text-align: center;
+	@media (max-width: 768px) {
+		margin-top: 0em;
+	}
+	outline: none !important;
+	width: 100%;
+	#carouselImage {
+		max-height: 500px;
+		min-width: auto;
+		@media (max-width: 768px) {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+<div class="container-fluid">
+	<h2>Projects</h2>
+	<hr>
+	<div class="row" id="gridView" >
+		<div class="col-6 col-md-6 col-lg-4 col-xl-4" *ngFor="let project of projects">
+			<a routerLink="/project/{{project.id}}" routerLinkActive="active" (click)="onSelect(project)">
+				<img class="img-thumbnail" [src]="project.image" alt="{{project.name}}" title="{{project.name}}">
+				<div>
+					<h6>{{project.name}}</h6>
+				</div>
+			</a>
+			<button class="btn btn-danger" (click)="openModal(content)">DELETE</button>
+			<ng-template #content let-modal>
+			  <div class="modal-header">
+			    <h4 class="modal-title">{{project.name}}</h4>
+			    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+			      <span aria-hidden="true">&times;</span>
+			    </button>
+			  </div>
+			  <div class="modal-body">
+			    <p>Are you sure you want to delete this project?</p>
+			  </div>
+			  <div class="modal-footer">
+			    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+			    <button type="button" class="btn btn-danger" (click)="delete(project.id)">Delete</button>
+			  </div>
+			</ng-template>
+		</div>
+	</div>
+</div>

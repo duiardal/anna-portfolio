@@ -1,0 +1,23 @@
+#sidebar {
+	position: fixed;
+	margin-top: 7em;
+	padding-left: 1em;
+	@media (max-width: 768px) {
+		position: relative;
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+	#menuLinkDiv {
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+		#menuLink {
+			font-family: ivymode, sans-serif;
+			color: black;
+		}
+		#menuLink:hover {
+			color: lightgrey;
+			text-decoration: none;
+		}
+	}
+}

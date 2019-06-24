@@ -1,0 +1,58 @@
+#gridView {
+	margin-top: 7em;
+	@media (max-width: 768px) {
+		margin-top: 0em;
+	}
+	#imgDiv {
+		margin: 0px;
+		padding: 0px;
+		.img-thumbnail {
+			border: none !important;
+			border-radius: 0px;
+			margin: -1px;
+			padding: 0px;
+			-moz-transition: all 0.2s ease-in-out 0s;
+			-webkit-transition: all 0.2s ease-in-out 0s;
+			-ms-transition: all 0.2s ease-in-out 0s;
+			transition: all 0.2s ease-in-out 0s;
+		}
+		#imgParagaraph {
+			font-family: ivymode;
+			color: black;
+			opacity: 0;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-moz-transition: all 0.2s ease-in-out 0s;
+			-webkit-transition: all 0.2s ease-in-out 0s;
+			-ms-transition: all 0.2s ease-in-out 0s;
+			transition: all 0.2s ease-in-out 0s;
+		}
+	}
+	#imgDiv:hover {
+		.img-thumbnail {
+			opacity: 0.4;
+		}
+		#imgParagaraph {
+			opacity: 1;
+		}
+	}
+}
+
+h2 {
+	font-family: bodoni, serif;
+	text-align: center;
+}
+
+a {
+	font-family: bodoni, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: lightgrey;
+}

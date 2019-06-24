@@ -1,0 +1,10 @@
+<div class="container-fluid" *ngIf="projects">
+	<div class="row" id="gridView" >
+		<div class="col-6 col-md-6 col-lg-4 col-xl-4" *ngFor="let project of projects" id="imgDiv">
+			<a routerLink="/project/{{project.id}}" routerLinkActive="active" (click)="onSelect(project)">
+				<img class="img-thumbnail" [src]="project.thumbnail" alt="{{project.name}}" title="{{project.name}}">
+				<p id="imgParagaraph">{{project.name}}</p>
+			</a>
+		</div>
+	</div>
+</div>

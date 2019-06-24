@@ -1,0 +1,26 @@
+#contactPage {
+	margin-top: 7em;
+	@media (max-width: 768px) {
+		margin-top: 0em;
+		text-align: center;
+	}
+	h6 {
+		font-family: ivymode, serif;
+		margin-bottom: 2em;
+	}
+
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-family: bodoni, sans-serif;
+		font-size: 10pt;
+		a {
+			color: black;
+			text-decoration: underline;
+		}
+
+		a:hover {
+			color: lightgrey;
+		}
+	}
+}
