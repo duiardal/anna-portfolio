@@ -34,14 +34,12 @@ export class HomeComponent implements OnInit {
 
 	onSelect(project: Project): void {
 		this.selectedProject = project;
-		console.log(this.selectedProject);
 	}
 
 	getProjects(): void {
 		this.projectService.getProjects()
 			.subscribe(projects => {
 				this.projects = projects;
-				// console.log(this.projects);
 			});
 	}
 
@@ -49,7 +47,6 @@ export class HomeComponent implements OnInit {
 		this.projectService.getCarouselImages()
 			.subscribe(carouselImages => {
 				this.carouselImages = carouselImages;
-				console.log(this.carouselImages);
 			});
 	}
 

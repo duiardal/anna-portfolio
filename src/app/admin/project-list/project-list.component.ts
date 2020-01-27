@@ -30,7 +30,6 @@ export class ProjectListComponent implements OnInit {
 
 	delete(id: string) {
 		this.projectService.deleteProject(id);
-		console.log("Project " + id + " deleted");
 		const modalRef = this.modalService.dismissAll();
 	}
 

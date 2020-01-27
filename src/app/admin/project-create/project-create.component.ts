@@ -60,7 +60,7 @@ export class ProjectCreateComponent implements OnInit {
 
 	ResetForm() {
 		this.newProjectForm.reset();
-	}  
+	}
 
 	create(project: Project){
 		this.projectService.createProjects(project);
@@ -77,7 +77,6 @@ export class ProjectCreateComponent implements OnInit {
         this.downloadURL = ref.getDownloadURL();
 	        this.downloadURL.subscribe( dataURL => {
 	        	this.resultURL = dataURL;
-	        	console.log(this.resultURL);
 	        	this.newProjectForm.patchValue({
 					image: this.resultURL
 				});
@@ -87,5 +86,5 @@ export class ProjectCreateComponent implements OnInit {
 	    }))
 	    .subscribe();
 	}
-		
+
 }
